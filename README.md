@@ -2,6 +2,7 @@
 for myself
 
 第三方库介绍: http://www.cnblogs.com/kakadekafuka/p/4726459.html
+
 1、
 如果要统计ios开发代码，包括头文件的，终端命令进入项目目录下，命令如下
 find . -name "*.m" -or -name "*.h" -or -name "*.xib" -or -name "*.c" |xargs wc -l  
@@ -10,7 +11,6 @@ find . -name "*.m" -or -name "*.h" -or -name "*.xib" -or -name "*.c" |xargs grep
 列出代码行数总和
 grep -v "^$"是去掉空行
 注释也统计在代码量之内，毕竟也一个字一个字码出来的
-
 
 http://ios.jobbole.com/85284/  富文本点击
 
@@ -202,8 +202,11 @@ NSStringEncoding  gbkEncoding = 	CFStringConvertEncodingToNSStringEncoding(kCFSt
 NSString *stttt = [[NSString alloc]initWithData:responseObject   encoding:gbkEncoding];
 
 12、IOS适配HTTPS：http://www.cocoachina.com/ios/20151021/13722.html
+
 13、plist创建，读写数据http://blog.csdn.net/totogo2010/article/details/7634185
+
 14、模板路径/Applications/Xcode.app/Contents/Developer/Platforms/iphoneOS.platform/Developer/Library/Xcode/Templates/File/Templates/source
+
 15、隐藏/显示tabbar
 	//隐藏tabbar
 - (void) hideTabBar:(UITabBarController *) tabbarcontroller {
@@ -245,12 +248,14 @@ NSString *stttt = [[NSString alloc]initWithData:responseObject   encoding:gbkEnc
 }
 
 16、swift新特性：https://onevcat.com/2017/02/ownership/
+
 17、真机打印不全的情况
 #ifdef DEBUG
 #define QYHLog(format, ...) printf("[%s] %s [第%d行] %s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
 #else
 #define QYHLog(format, ...)
 #endif
+
 18、富文本属性：
 NSFontAttributeName                设置字体属性，默认值：字体：Helvetica(Neue) 字号：12
 NSForegroundColorAttributeNam      设置字体颜色，取值为 UIColor对象，默认值为黑色
@@ -275,6 +280,11 @@ NSAttachmentAttributeName          设置文本附件,取值为NSTextAttachment�
 NSParagraphStyleAttributeName      设置文本段落排版格式，取值为 NSParagraphStyle 对象
 
 19、自定义转场动画http://blog.csdn.net/scubers/article/details/46974503
+
 20、runtime：http://yulingtianxia.com/blog/2014/11/05/objective-c-runtime/
+
 21、GCD：https://github.com/nixzhu/dev-blog/blob/master/2014-04-19-grand-central-dispatch-in-depth-part-1.md
+
 22、xcassets无法识别jpg
+
+23、

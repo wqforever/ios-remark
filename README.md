@@ -290,3 +290,7 @@ NSParagraphStyleAttributeName      设置文本段落排版格式，取值为 NS
 23、高斯模糊，CI。vImage，GPUImage：http://www.jianshu.com/p/6dd0eab888a6
 
 24、CoreImage:http://blog.csdn.net/qq_22981537/article/details/52487074
+
+25、拒审原因：http://www.tuicool.com/articles/2MvEzmj
+24、CoreImage:http://blog.csdn.net/qq_22981537/article/details/52487074深
+24、CoreImage:http://blog.csdn.net/qq_22981537/article/details/52487074

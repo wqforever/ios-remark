@@ -292,5 +292,16 @@ NSParagraphStyleAttributeName      设置文本段落排版格式，取值为 NS
 24、CoreImage:http://blog.csdn.net/qq_22981537/article/details/52487074
 
 25、拒审原因：http://www.tuicool.com/articles/2MvEzmj
-24、CoreImage:http://blog.csdn.net/qq_22981537/article/details/52487074深
-24、CoreImage:http://blog.csdn.net/qq_22981537/article/details/52487074
+26、//返回父vc
+- (UIViewController *)viewController
+{
+    for (UIView* next = [self superview]; next; next = next.superview) {
+        UIResponder *nextResponder = [next nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)nextResponder;
+        }
+    }
+    NSLog(@"父视图:%@",[self superview]);
+    return nil;
+}
+

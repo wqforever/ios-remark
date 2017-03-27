@@ -305,3 +305,4 @@ NSParagraphStyleAttributeName      设置文本段落排版格式，取值为 NS
     return nil;
 }
 
+27、 蓝牙：http://www.jianshu.com/p/84b5b834b942

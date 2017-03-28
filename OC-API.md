@@ -306,3 +306,157 @@ NSParagraphStyleAttributeName      设置文本段落排版格式，取值为 NS
 }
 
 27、 蓝牙：http://www.jianshu.com/p/84b5b834b942
+28、【uibundle mainbundle】infoDictionary】
+"BuglyAppVersionString " = "1.2.6";
+    BuglyDebugEnable = 1;
+    BuildMachineOSBuild = 16C67;
+    CFBundleAllowMixedLocalizations = 1;
+    CFBundleDevelopmentRegion = en;
+    CFBundleDisplayName = "\U9752\U4e91\U6c47";
+    CFBundleExecutable = FocusEntrance;
+    CFBundleIcons =     {
+        CFBundlePrimaryIcon =         {
+            CFBundleIconFiles =             (
+                "AppIcon-220x20",
+                "AppIcon-229x29",
+                "AppIcon-240x40",
+                "AppIcon-260x60"
+            );
+        };
+    };
+    CFBundleIdentifier = "com.ifenduo.FocusEntrance";
+    CFBundleInfoDictionaryVersion = "6.0";
+    CFBundleName = FocusEntrance;
+    CFBundleNumericVersion = 20414464;
+    CFBundlePackageType = APPL;
+    CFBundleShortVersionString = "1.6.0";
+    CFBundleSignature = "????";
+    CFBundleSupportedPlatforms =     (
+        iPhoneOS
+    );
+    CFBundleURLTypes =     (
+                {
+            CFBundleTypeRole = Editor;
+            CFBundleURLName = weixin;
+            CFBundleURLSchemes =             (
+                wxbe59499f76f71944
+            );
+        },
+                {
+            CFBundleTypeRole = Editor;
+            CFBundleURLName = QQ;
+            CFBundleURLSchemes =             (
+                tencent1104655606
+            );
+        },
+                {
+            CFBundleTypeRole = Editor;
+            CFBundleURLName = Q;
+            CFBundleURLSchemes =             (
+                QQ41D7B4F6
+            );
+        }
+    );
+    CFBundleVersion = "1.3.7";
+    DTCompiler = "com.apple.compilers.llvm.clang.1_0";
+    DTPlatformBuild = 14C89;
+    DTPlatformName = iphoneos;
+    DTPlatformVersion = "10.2";
+    DTSDKBuild = 14C89;
+    DTSDKName = "iphoneos10.2";
+    DTXcode = 0821;
+    DTXcodeBuild = 8C1002;
+    "Information Property List" =     {
+        "" = "";
+        "Privacy - Camera Usage Description" = "\U8bbf\U95ee\U76f8\U673a";
+        "Privacy - Microphone Usage Description" = "\U8bbf\U95ee\U9ea6\U514b\U98ce";
+    };
+    LSApplicationCategoryType =     {
+    };
+    LSApplicationQueriesSchemes =     (
+        wechat,
+        weixin,
+        sinaweibohd,
+        sinaweibo,
+        sinaweibosso,
+        weibosdk,
+        "weibosdk2.5",
+        mqqapi,
+        mqq,
+        mqqOpensdkSSoLogin,
+        mqqconnect,
+        mqqopensdkdataline,
+        mqqopensdkgrouptribeshare,
+        mqqopensdkfriend,
+        mqqopensdkapi,
+        mqqopensdkapiV2,
+        mqqopensdkapiV3,
+        mqzoneopensdk,
+        wtloginmqq,
+        wtloginmqq2,
+        mqqwpa,
+        mqzone,
+        mqzonev2,
+        mqzoneshare,
+        wtloginqzone,
+        mqzonewx,
+        mqzoneopensdkapiV2,
+        mqzoneopensdkapi19,
+        mqzoneopensdkapi,
+        mqqbrowser,
+        mttbrowser
+    );
+    LSRequiresIPhoneOS = 1;
+    MinimumOSVersion = "7.0";
+    NSAppTransportSecurity =     {
+        NSAllowsArbitraryLoads = 1;
+        NSExceptionDomains =         {
+            "jpush.cn" =             {
+                NSExceptionAllowsInsecuresHTTPLoad = 1;
+                NSIncludesSubdomains = 1;
+            };
+        };
+    };
+    NSCameraUsageDescription = "\U662f\U5426\U5141\U8bb8\U9752\U4e91\U6c47\U4f7f\U7528\U60a8\U7684\U7167\U76f8\U673a";
+    NSContactsUsageDescription = "\U9752\U4e91\U6c47\U60f3\U8bbf\U95ee\U60a8\U7684\U901a\U8baf\U5f55";
+    NSLocationWhenInUseUsageDescription = "\U662f\U5426\U5141\U8bb8\U9752\U4e91\U6c47\U83b7\U53d6\U60a8\U7684\U5730\U7406\U4f4d\U7f6e\U4fe1\U606f";
+    NSMicrophoneUsageDescription = "\U662f\U5426\U5141\U8bb8\U9752\U4e91\U6c47\U4f7f\U7528\U60a8\U7684\U9ea6\U514b\U98ce";
+    NSPhotoLibraryUsageDescription = "\U9752\U4e91\U6c47\U60f3\U8bbf\U95ee\U60a8\U7684\U76f8\U518c";
+    UIDeviceFamily =     (
+        1
+    );
+    UILaunchImages =     (
+                {
+            UILaunchImageMinimumOSVersion = "8.0";
+            UILaunchImageName = "LaunchImage-1-800-Portrait-736h";
+            UILaunchImageOrientation = Portrait;
+            UILaunchImageSize = "{414, 736}";
+        },
+                {
+            UILaunchImageMinimumOSVersion = "8.0";
+            UILaunchImageName = "LaunchImage-1-800-667h";
+            UILaunchImageOrientation = Portrait;
+            UILaunchImageSize = "{375, 667}";
+        },
+                {
+            UILaunchImageMinimumOSVersion = "7.0";
+            UILaunchImageName = "LaunchImage-1-700";
+            UILaunchImageOrientation = Portrait;
+            UILaunchImageSize = "{320, 480}";
+        },
+                {
+            UILaunchImageMinimumOSVersion = "7.0";
+            UILaunchImageName = "LaunchImage-1-700-568h";
+            UILaunchImageOrientation = Portrait;
+            UILaunchImageSize = "{320, 568}";
+        }
+    );
+    UILaunchStoryboardName = LaunchScreen;
+    UIRequiredDeviceCapabilities =     (
+        armv7
+    );
+    UISupportedInterfaceOrientations =     (
+        UIInterfaceOrientationPortrait
+    );
+    UIViewControllerBasedStatusBarAppearance = 0;
+}

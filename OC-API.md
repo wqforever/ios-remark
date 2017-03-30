@@ -492,4 +492,9 @@ md5:
 ```
 openssl dgst -md5 dj.txt
 ```
-30、
+30、动画
+```
+http://blog.csdn.net/gu_jin_xiao/article/details/50085675
+http://www.open-open.com/lib/view/open1472564715676.html
+http://www.cocoachina.com/ios/20160517/16290.html
+```

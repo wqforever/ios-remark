@@ -319,7 +319,7 @@ NSParagraphStyleAttributeName      设置文本段落排版格式，取值为 NS
 ```
 27、 蓝牙：http://www.jianshu.com/p/84b5b834b942
 
-#28、【uibundle mainbundle】infoDictionary】
+28、【uibundle mainbundle】infoDictionary】
 
 ```
 "BuglyAppVersionString " = "1.2.6";
@@ -491,3 +491,4 @@ md5:
 ```
 openssl dgst -md5 dj.txt
 ```
+30、

@@ -35,19 +35,22 @@ killall Finder
 4、Quartz2D: http://www.jianshu.com/p/0e785269dccc
 
 5、获取UUID ：方法1.
+```
 CFUUIDRef uuid = CFUUIDCreate(kCFAllocatorDefault);
 
 CFStringRef cfstring = CFUUIDCreateString(kCFAllocatorDefault, uuid);
 
 NSString * uuid = [NSString stringWithFormat:@"%@", uuidStr];
-
+```
 方法2:
-
+```
 [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-
+```
 6、获取毫秒时间戳:UInt64 recordTime = [[NSDate date] timeIntervalSince1970]*1000;
 
-7、强制横屏，APPdelegate 加@property(nonatomic,assign)NSInteger allowRotation;
+7、强制横屏，
+```
+APPdelegate 加@property(nonatomic,assign)NSInteger allowRotation;
 
 
 - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
@@ -71,9 +74,9 @@ AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].dele
     [UIViewController attemptRotationToDeviceOrientation];
 
 
-
+```
 8、设置锁屏
-
+```
  NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
 
     //设置歌曲题目
@@ -177,30 +180,34 @@ typedef NS_ENUM(NSInteger, UIEventSubtype) {
     UIEventSubtypeRemoteControlEndSeekingForward    = 109,
 
 };
-
+```
 
 9、判断字符串是否整数，浮点数
 //判断是否为整形：
-
+```
 - (BOOL)isPureInt:(NSString*)string{
     NSScanner* scan = [NSScannerscannerWithString:string];
    int val;
    return[scan scanInt:&val] && [scanisAtEnd];
 }
-
+```
 //判断是否为浮点形：
-
+```
 - (BOOL)isPureFloat:(NSString*)string{
     NSScanner* scan = [NSScannerscannerWithString:string];
    float val;
    return[scan scanFloat:&val] && [scanisAtEnd];
 }
-
-10、剔除数组中重复数据[array valueForKeyPath:@“@distinctUnionOfObjects.self"]
+```
+10、剔除数组中重复数据
+```
+[array valueForKeyPath:@“@distinctUnionOfObjects.self"]
+```
 11、GNK转码：
+```
 NSStringEncoding  gbkEncoding = 	CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
 NSString *stttt = [[NSString alloc]initWithData:responseObject   encoding:gbkEncoding];
-
+```
 12、IOS适配HTTPS：http://www.cocoachina.com/ios/20151021/13722.html
 
 13、plist创建，读写数据http://blog.csdn.net/totogo2010/article/details/7634185
@@ -209,6 +216,7 @@ NSString *stttt = [[NSString alloc]initWithData:responseObject   encoding:gbkEnc
 
 15、隐藏/显示tabbar
 	//隐藏tabbar
+	```
 - (void) hideTabBar:(UITabBarController *) tabbarcontroller {
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.5];
@@ -226,7 +234,9 @@ NSString *stttt = [[NSString alloc]initWithData:responseObject   encoding:gbkEnc
     }
     [UIView commitAnimations];
 }
+```
 //显示tabbar
+```
 - (void) showTabBar:(UITabBarController *) tabbarcontroller {
     
     
@@ -246,16 +256,17 @@ NSString *stttt = [[NSString alloc]initWithData:responseObject   encoding:gbkEnc
     
     [UIView commitAnimations];
 }
-
+```
 16、swift新特性：https://onevcat.com/2017/02/ownership/
 
 17、真机打印不全的情况
+```
 #ifdef DEBUG
 #define QYHLog(format, ...) printf("[%s] %s [第%d行] %s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
 #else
 #define QYHLog(format, ...)
 #endif
-
+```
 18、富文本属性：
 NSFontAttributeName                设置字体属性，默认值：字体：Helvetica(Neue) 字号：12
 NSForegroundColorAttributeNam      设置字体颜色，取值为 UIColor对象，默认值为黑色
@@ -293,6 +304,7 @@ NSParagraphStyleAttributeName      设置文本段落排版格式，取值为 NS
 
 25、拒审原因：http://www.tuicool.com/articles/2MvEzmj
 26、//返回父vc
+```
 - (UIViewController *)viewController
 {
     for (UIView* next = [self superview]; next; next = next.superview) {
@@ -304,7 +316,7 @@ NSParagraphStyleAttributeName      设置文本段落排版格式，取值为 NS
     NSLog(@"父视图:%@",[self superview]);
     return nil;
 }
-
+```
 27、 蓝牙：http://www.jianshu.com/p/84b5b834b942
 
 28、【uibundle mainbundle】infoDictionary】
@@ -465,13 +477,16 @@ NSParagraphStyleAttributeName      设置文本段落排版格式，取值为 NS
 ```
 29、 命令行openssl和md5加密
 加密的结果为ascii码的加密与解密：
+```
 openssl enc -aes-128-cbc -e -a -in yygy/in.txt -out dj.txt -K c286696d887c9aa0611bbb3e2025a45a -iv 562e17996d093d28ddb3ba695a2e6f58
 openssl enc -aes-128-cbc -d -a -in dj.txt -out dedj.txt -K c286696d887c9aa0611bbb3e2025a45a -iv 562e17996d093d28ddb3ba695a2e6f58
-
+```
 加密的结果为二进制文件的加密与解密：
+```
 openssl enc -aes-128-cbc -e  -in yygy/in.txt -out dj.txt -K c286696d887c9aa0611bbb3e2025a45a -iv 562e17996d093d28ddb3ba695a2e6f58
 openssl enc -aes-128-cbc -d  -in dj.txt -out dedj.txt -K c286696d887c9aa0611bbb3e2025a45a -iv 562e17996d093d28ddb3ba695a2e6f58
-
+```
 md5:
+```
 openssl dgst -md5 dj.txt
-
+```

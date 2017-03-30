@@ -268,6 +268,7 @@ NSString *stttt = [[NSString alloc]initWithData:responseObject   encoding:gbkEnc
 #endif
 ```
 18、富文本属性：
+```
 NSFontAttributeName                设置字体属性，默认值：字体：Helvetica(Neue) 字号：12
 NSForegroundColorAttributeNam      设置字体颜色，取值为 UIColor对象，默认值为黑色
 NSBackgroundColorAttributeName     设置字体所在区域背景颜色，取值为 UIColor对象，默认值为nil, 透明色
@@ -289,7 +290,7 @@ NSVerticalGlyphFormAttributeName   设置文字排版方向，取值为 NSNumber
 NSLinkAttributeName                设置链接属性，点击后调用浏览器打开指定URL地址
 NSAttachmentAttributeName          设置文本附件,取值为NSTextAttachment对象,常用于文字图片混排
 NSParagraphStyleAttributeName      设置文本段落排版格式，取值为 NSParagraphStyle 对象
-
+```
 19、自定义转场动画http://blog.csdn.net/scubers/article/details/46974503
 
 20、runtime：http://yulingtianxia.com/blog/2014/11/05/objective-c-runtime/

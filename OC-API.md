@@ -215,8 +215,8 @@ NSString *stttt = [[NSString alloc]initWithData:responseObject   encoding:gbkEnc
 14、模板路径/Applications/Xcode.app/Contents/Developer/Platforms/iphoneOS.platform/Developer/Library/Xcode/Templates/File/Templates/source
 
 15、隐藏/显示tabbar
-	//隐藏tabbar
-	```
+@隐藏tabbar
+```
 - (void) hideTabBar:(UITabBarController *) tabbarcontroller {
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.5];

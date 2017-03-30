@@ -306,7 +306,9 @@ NSParagraphStyleAttributeName      设置文本段落排版格式，取值为 NS
 }
 
 27、 蓝牙：http://www.jianshu.com/p/84b5b834b942
+
 28、【uibundle mainbundle】infoDictionary】
+```
 "BuglyAppVersionString " = "1.2.6";
     BuglyDebugEnable = 1;
     BuildMachineOSBuild = 16C67;
@@ -460,3 +462,16 @@ NSParagraphStyleAttributeName      设置文本段落排版格式，取值为 NS
     );
     UIViewControllerBasedStatusBarAppearance = 0;
 }
+```
+29、 命令行openssl和md5加密
+加密的结果为ascii码的加密与解密：
+openssl enc -aes-128-cbc -e -a -in yygy/in.txt -out dj.txt -K c286696d887c9aa0611bbb3e2025a45a -iv 562e17996d093d28ddb3ba695a2e6f58
+openssl enc -aes-128-cbc -d -a -in dj.txt -out dedj.txt -K c286696d887c9aa0611bbb3e2025a45a -iv 562e17996d093d28ddb3ba695a2e6f58
+
+加密的结果为二进制文件的加密与解密：
+openssl enc -aes-128-cbc -e  -in yygy/in.txt -out dj.txt -K c286696d887c9aa0611bbb3e2025a45a -iv 562e17996d093d28ddb3ba695a2e6f58
+openssl enc -aes-128-cbc -d  -in dj.txt -out dedj.txt -K c286696d887c9aa0611bbb3e2025a45a -iv 562e17996d093d28ddb3ba695a2e6f58
+
+md5:
+openssl dgst -md5 dj.txt
+

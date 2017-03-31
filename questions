@@ -1,2 +1,3 @@
 1、No code signature found.：http://www.jianshu.com/p/73a42fc03492 或者手机内存不足时
 2、关闭注释行警告:bulid setting -> Documentation Comments -> NO
+3、关闭弃用方法警告：other warning flags ->-Wno-deprecated-declarations

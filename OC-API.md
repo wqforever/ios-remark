@@ -498,3 +498,7 @@ http://blog.csdn.net/gu_jin_xiao/article/details/50085675
 http://www.open-open.com/lib/view/open1472564715676.html
 http://www.cocoachina.com/ios/20160517/16290.html
 ```
+31、 [[UIApplication sharedApplication]
+```
+http://blog.csdn.net/huifeidexin_1/article/details/7792371
+```

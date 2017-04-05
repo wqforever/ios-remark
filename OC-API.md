@@ -502,3 +502,7 @@ http://www.cocoachina.com/ios/20160517/16290.html
 ```
 http://blog.csdn.net/huifeidexin_1/article/details/7792371
 ```
+32、iMessage
+```
+http://blog.csdn.net/gzgengzhen/article/details/53115136
+```

@@ -3,3 +3,4 @@
 3、关闭弃用方法警告：other warning flags ->-Wno-deprecated-declarations
 4、属性命名冲突:http://blog.csdn.net/jeffasd/article/details/50475608
 5、openCV配置错误expected identifier exposure_compensate.hpp：http://blog.csdn.net/raynayyue/article/details/40543813
+6、警告处理：http://www.cnblogs.com/dsxniubility/p/4757760.html

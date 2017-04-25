@@ -530,3 +530,9 @@ grep -v "^$"是去掉空行
 NSInteger strLength = textField.text.length - range.length + string.length;
 return (strLength <= 字数);
 ```
+37、UDID
+```
+ CFUUIDRef uuidRef = CFUUIDCreate(kCFAllocatorDefault);
+    
+ NSString * strUUID = (NSString *)CFBridgingRelease(CFUUIDCreateString (kCFAllocatorDefault,uuidRef));
+```

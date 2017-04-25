@@ -525,3 +525,8 @@ grep -v "^$"是去掉空行
 ```
 34、CoreText：http://www.cocoachina.com/ios/20160512/16223.html
 35、渐变色：http://www.jianshu.com/p/3e0e25fd9b85
+36、限制输入字数：
+```
+NSInteger strLength = textField.text.length - range.length + string.length;
+return (strLength <= 字数);
+```

@@ -537,3 +537,4 @@ return (strLength <= 字数);
  NSString * strUUID = (NSString *)CFBridgingRelease(CFUUIDCreateString (kCFAllocatorDefault,uuidRef));
 ```
 38、ARC->MRC -fno-objc-arc  MRC->ARC -fobjc-arc
+39、改模板：http://www.cocoachina.com/ios/20170503/19164.html

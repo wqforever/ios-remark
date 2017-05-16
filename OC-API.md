@@ -538,3 +538,4 @@ return (strLength <= 字数);
 ```
 38、ARC->MRC -fno-objc-arc  MRC->ARC -fobjc-arc
 39、改模板：http://www.cocoachina.com/ios/20170503/19164.html
+40、searchbar无光标问题，设置tincolor = [uicolor XXXcolor];

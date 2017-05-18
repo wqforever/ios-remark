@@ -539,3 +539,9 @@ return (strLength <= 字数);
 38、ARC->MRC -fno-objc-arc  MRC->ARC -fobjc-arc
 39、改模板：http://www.cocoachina.com/ios/20170503/19164.html
 40、searchbar无光标问题，设置tincolor = [uicolor XXXcolor];
+41、indexPath比较的正确用法(iOS 10可以直接 ==):
+```
+if ([currentIndexPath compare:lastIndexPath] != NSOrderedSame) {
+    // TODO
+}
+```

@@ -545,3 +545,4 @@ if ([currentIndexPath compare:lastIndexPath] != NSOrderedSame) {
     // TODO
 }
 ```
+42、听筒切换方案:http://blog.csdn.net/xdrt81y/article/details/38926663

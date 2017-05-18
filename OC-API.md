@@ -546,3 +546,10 @@ if ([currentIndexPath compare:lastIndexPath] != NSOrderedSame) {
 }
 ```
 42、听筒切换方案:http://blog.csdn.net/xdrt81y/article/details/38926663
+43、连续点击取消前次方法
+```
+ [[self class]cancelPreviousPerformRequestsWithTarget:self selector:@selector(reload) object:nil];
+        
+  [self performSelector:@selector(reload) withObject:nil afterDelay:0];
+
+```

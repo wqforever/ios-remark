@@ -554,3 +554,4 @@ if ([currentIndexPath compare:lastIndexPath] != NSOrderedSame) {
 
 ```
 44、正则表达式:https://deerchao.net/tutorials/regex/regex.htm
+45、更改系统alert样式：http://www.jianshu.com/p/1a2317900057 ， ios8以前没有alertController，需要适配alertview

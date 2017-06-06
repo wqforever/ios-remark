@@ -557,3 +557,4 @@ if ([currentIndexPath compare:lastIndexPath] != NSOrderedSame) {
 45、更改系统alert样式：http://www.jianshu.com/p/1a2317900057 ， ios8以前没有alertController，需要适配alertview
 46、自定义pickerview：https://github.com/wxzwork/CustomPickView
 47、runtime：https://www.bbsmax.com/A/xl56Eol4Jr/
+48、数据库:http://www.jianshu.com/p/ce0b6d9aa246

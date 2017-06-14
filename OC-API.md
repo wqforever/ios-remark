@@ -558,3 +558,9 @@ if ([currentIndexPath compare:lastIndexPath] != NSOrderedSame) {
 46、自定义pickerview：https://github.com/wxzwork/CustomPickView
 47、runtime：https://www.bbsmax.com/A/xl56Eol4Jr/
 48、数据库:http://www.jianshu.com/p/ce0b6d9aa246
+49、UIWebView与WKWebView、JavaScript与OC交互：
+```
+http://www.cocoachina.com/ios/20170612/19485.html
+http://www.jianshu.com/p/870dba42ec15
+http://www.jianshu.com/p/52668d5b2e68
+```

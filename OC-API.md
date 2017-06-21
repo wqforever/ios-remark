@@ -564,3 +564,12 @@ http://www.cocoachina.com/ios/20170612/19485.html
 http://www.jianshu.com/p/870dba42ec15
 http://www.jianshu.com/p/52668d5b2e68
 ```
+50、layoutSubviews以下情况会被调用:
+```
+直接调用setLayoutSubviews。（这个在上面苹果官方文档里有说明）
+addSubview的时候。
+当view的frame发生改变的时候。
+滑动UIScrollView的时候。
+旋转Screen会触发父UIView上的layoutSubviews事件。
+改变一个UIView大小的时候也会触发父UIView上的layoutSubviews事件。
+```

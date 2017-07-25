@@ -573,3 +573,4 @@ addSubview的时候。
 旋转Screen会触发父UIView上的layoutSubviews事件。
 改变一个UIView大小的时候也会触发父UIView上的layoutSubviews事件。
 ```
+51、改button点击范围：http://www.cnblogs.com/PeterWolf/p/6207829.html

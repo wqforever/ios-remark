@@ -599,3 +599,82 @@ ss:     秒，2位，带前置0
 S:         毫秒
 Z：        GMT（时区）
 ```
+54、collectionview:
+```
+- (void)prepareLayout {
+    [super prepareLayout];
+    
+    
+    self.itemSize = CGSizeMake(WIDTH, HEIGHT);
+    self.minimumLineSpacing = 20;
+    self.minimumInteritemSpacing = 0.01;
+    
+}
+
+-(CGSize)collectionViewContentSize {
+    
+    return CGSizeMake((WIDTH + 20) * _count + 200, HEIGHT);
+}
+
+-(UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSUInteger item = indexPath.item;
+    
+    CGRect frame ;
+    frame.size = self.itemSize;
+    
+    float x = (WIDTH + 20) * item ;
+    float y = 0;
+    
+    frame.origin = CGPointMake(x, y);
+    
+    UICollectionViewLayoutAttributes *theNewAttr = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
+    theNewAttr.frame=frame;
+    return theNewAttr;
+}
+- (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect
+{
+    NSArray *array = [super layoutAttributesForElementsInRect:rect];
+    
+//    CGRect visibleRect = (CGRect){self.collectionView.contentOffset, self.collectionView.bounds.size};
+//    
+//    for (UICollectionViewLayoutAttributes *attributes in array) {
+//        
+//    }
+    
+    return array;
+}
+
+- (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset withScrollingVelocity:(CGPoint)velocity{
+    //1.计算scrollview最后停留的范围
+    CGRect lastRect ;
+    lastRect.origin = proposedContentOffset;
+    lastRect.size = self.collectionView.frame.size;
+    //QYHLog(@"proposedContentOffset.X:%f",proposedContentOffset.x);
+    //2.取出这个范围内的所有属性
+    NSArray *array = [self layoutAttributesForElementsInRect:lastRect];
+    //QYHLog(@"array:%ld",(long)array.count);
+    //起始的x值，也即默认情况下要停下来的x值
+    CGFloat startX = proposedContentOffset.x;
+    
+    //3.遍历所有的属性
+    CGFloat adjustOffsetX = MAXFLOAT;
+    for (UICollectionViewLayoutAttributes *attrs in array) {
+        CGFloat attrsX = attrs.frame.origin.x;
+        CGFloat attrsW = CGRectGetWidth(attrs.frame) ;
+        //QYHLog(@"attrsX:%f---attrsW:%f---item:%ld",attrsX,attrsW,(long)attrs.indexPath.item);
+        if (startX - attrsX  < attrsW/2) {
+            adjustOffsetX = -(startX - attrsX);
+        }else{
+            adjustOffsetX = attrsW - (startX - attrsX) + 20;
+        }
+        
+        break ;//只循环数组中第一个元素即可，所以直接break了
+    }
+    if (startX >= (WIDTH + 20)*_count + 200 - MAIN_SCREEN_WIDTH) {
+        return CGPointMake((WIDTH + 20)*_count + 200 - MAIN_SCREEN_WIDTH, proposedContentOffset.y);
+    }
+    return CGPointMake(proposedContentOffset.x + adjustOffsetX, proposedContentOffset.y);
+}
+
+```

@@ -678,4 +678,4 @@ Z：        GMT（时区）
 }
 
 ```http://www.jianshu.com/p/9d98fad685c8
-55，UIView的生命周期:
+55，UIView的生命周期:http://www.jianshu.com/p/9d98fad685c8

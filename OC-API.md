@@ -677,9 +677,10 @@ Z：        GMT（时区）
     return CGPointMake(proposedContentOffset.x + adjustOffsetX, proposedContentOffset.y);
 }
 
-```http://www.jianshu.com/p/9d98fad685c8
+```
 55，UIView的生命周期:http://www.jianshu.com/p/9d98fad685c8
 56、旋转翻转改变相机位置:
+
 ```
 //center表示相机位置 disZ表示的是相机离z=0平面（也可以理解为屏幕）的距离
 CATransform3D CATransform3DMakePerspective(CGPoint center, float disZ)

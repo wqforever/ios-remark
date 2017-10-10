@@ -679,3 +679,20 @@ Z：        GMT（时区）
 
 ```http://www.jianshu.com/p/9d98fad685c8
 55，UIView的生命周期:http://www.jianshu.com/p/9d98fad685c8
+56、旋转翻转改变相机位置:
+```
+//center表示相机位置 disZ表示的是相机离z=0平面（也可以理解为屏幕）的距离
+CATransform3D CATransform3DMakePerspective(CGPoint center, float disZ)
+{
+    CATransform3D transToCenter = CATransform3DMakeTranslation(-center.x, -center.y, 0);
+    CATransform3D transBack = CATransform3DMakeTranslation(center.x, center.y, 0);
+    CATransform3D scale = CATransform3DIdentity;
+    scale.m34 = -1.0f/disZ;
+    return CATransform3DConcat(CATransform3DConcat(transToCenter, scale), transBack);
+}
+
+CATransform3D CATransform3DPerspect(CATransform3D t, CGPoint center, float disZ)
+{
+    return CATransform3DConcat(t, CATransform3DMakePerspective(center, disZ));
+}
+```

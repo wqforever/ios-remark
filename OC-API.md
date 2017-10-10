@@ -677,4 +677,5 @@ Z：        GMT（时区）
     return CGPointMake(proposedContentOffset.x + adjustOffsetX, proposedContentOffset.y);
 }
 
-```
+```http://www.jianshu.com/p/9d98fad685c8
+55，UIView的生命周期:

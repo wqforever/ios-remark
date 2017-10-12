@@ -704,3 +704,4 @@ UIFont *font = [UIFont systemFontOfSize:15];
 CFStringRef fontName = (__bridge CFStringRef)font.fontName;
 CGFontRef fontRef = CGFontCreateWithFontName(fontName);
 ```
+59、NSNumberFormatter:http://www.jianshu.com/p/ae922d1a6886

@@ -698,3 +698,9 @@ CATransform3D CATransform3DPerspect(CATransform3D t, CGPoint center, float disZ)
 }
 ```
 57、矩阵计算：http://blog.csdn.net/Hello_Hwc/article/details/41307553
+58、uifont  -> cffont:
+```
+UIFont *font = [UIFont systemFontOfSize:15];
+CFStringRef fontName = (__bridge CFStringRef)font.fontName;
+CGFontRef fontRef = CGFontCreateWithFontName(fontName);
+```

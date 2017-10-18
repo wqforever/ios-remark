@@ -524,6 +524,7 @@ grep -v "^$"是去掉空行
 注释也统计在代码量之内，毕竟也一个字一个字码出来的
 ```
 34、CoreText：http://www.cocoachina.com/ios/20160512/16223.html
+            https://yq.aliyun.com/articles/35907?spm=5176.100240.searchblog.12.TGPd0O
 35、渐变色：http://www.jianshu.com/p/3e0e25fd9b85
 36、限制输入字数：
 ```

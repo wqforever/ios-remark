@@ -727,3 +727,16 @@ CGFontRef fontRef = CGFontCreateWithFontName(fontName);
     layer.beginTime = timeSincePause;
 }
 ```
+61、string中文转码，不管它是不是中文:
+```
+str = (NSString *)
+        CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
+                                                                  
+                                                                  (CFStringRef)oringinStr,
+                                                                  
+                                                                  (CFStringRef)@"!$&'()*+,-./:;=?@_~%#[]",
+                                                                  
+                                                                  NULL,
+                                                                  
+                                                                  kCFStringEncodingUTF8));
+```

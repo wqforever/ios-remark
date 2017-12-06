@@ -814,3 +814,11 @@ Wallpaper — prefs:root=Wallpaper
 
 Wi-Fi — prefs:root=WIFI
 ```
+64、webview长按问题，加载完成后调用:
+```
+ [webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.style.webkitUserSelect='none';"];
+ [webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.style.webkitTouchCallout='none';"];
+ &&
+ longPressed.minimumPressDuration = 0.4;(>0.5会被系统的手势覆盖)
+ 
+```

@@ -822,3 +822,31 @@ Wi-Fi — prefs:root=WIFI
  longPressed.minimumPressDuration = 0.4;(>0.5会被系统的手势覆盖)
  
 ```
+65、url编码、解码
+url编码
+```
+NSString * encodingString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+或者
+NSString * encodingString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+-(NSString *)URLEncodedString:(NSString *)str  {  
+    NSString *encodedString = (NSString *)  
+    CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,  
+                                                              (CFStringRef)str,  
+                                                              NULL,  
+                                                              (CFStringRef)@"!*'();:@&=+$,/?%#[]",  
+                                                              kCFStringEncodingUTF8));  
+      
+    return encodedString;  
+}  
+
+```
+url解码
+```
+NSString *str = [model.album_name stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+或者
+-(NSString *)URLDecodedString:(NSString *)str  {  
+    NSString *decodedString=(__bridge_transfer NSString *)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL, (__bridge CFStringRef)str, CFSTR(""), CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));  
+      
+    return decodedString;  
+}  
+```

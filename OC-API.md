@@ -850,3 +850,4 @@ NSString *str = [model.album_name stringByReplacingPercentEscapesUsingEncoding:N
     return decodedString;  
 }  
 ```
+66、JSContext *context=[webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];

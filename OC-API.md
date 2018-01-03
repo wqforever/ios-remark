@@ -912,3 +912,26 @@ acosh()/acoshf()/acoshl()
 4.6反双曲线正切值
 atanh()/atanhf()/atanhl()
 ```
+68、正则匹配3种方式:
+```
+a、谓词匹配
+NSString ＊email ＝ @“nijino_saki@163.com”；
+NSString *regex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
+BOOL isValid = [predicate evaluateWithObject:email];
+b、
+NSString *searchText = @"// Do any additional setup after loading the view, typically from a nib.";
+NSRange range = [searchText rangeOfString:@"(?:[^,])*\\." options:NSRegularExpressionSearch];
+if (range.location != NSNotFound) {
+    NSLog(@"%@", [searchText substringWithRange:range]);
+}
+c、
+NSString *searchText = @"// Do any additional setup after loading the view, typically from a nib.";   
+NSError *error = NULL;
+NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"(?:[^,])*\\." options:NSRegularExpressionCaseInsensitive error:&error];
+NSTextCheckingResult *result = [regex firstMatchInString:searchText options:0 range:NSMakeRange(0, [searchText length])];
+if (result) {
+    NSLog(@"%@\n", [searchText substringWithRange:result.range]);
+}
+```
+

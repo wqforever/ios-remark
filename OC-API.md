@@ -851,3 +851,64 @@ NSString *str = [model.album_name stringByReplacingPercentEscapesUsingEncoding:N
 }  
 ```
 66、JSContext *context=[webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
+67、数学函数
+```
+1.算数函数
+1.1产生随机数
+rand()
+1.2取绝对值
+fabs()
+1.3取复数的绝对值
+cabs(struct complex i)
+1.4浮点数的绝对值
+fabs()/fabsf()/fabsl()
+1.5取余
+fmod(double, double)
+1.6向上取整
+ceil()/ceilf()/ceill()
+1.7向下取整
+floor()/floorf()/floorl()
+1.8求最大值
+fmax()/fmaxf()/fmaxl()
+1.9求最小值
+fmin()/fminf()/fminl()
+1.10四舍五入
+round()/roundf()/roundl()
+2.指数与对数
+2.1求 n 的 m 次方的值
+pow(n, m)/powf(n, m)/powl(n, m)
+2.2求 e 的 x 次方
+exp(x)/expf(x)/expl(x)
+2.3以 e 为底的对数值
+log()/logf()/logl()
+2.4以10为底的对数
+log10()/log10f()/log10l()
+2.5开平方(根号)
+sqrt()
+3.三角函数
+3.1正弦值
+sin()/sinf()/sinl()
+3.2余弦值
+cons()/cosf()/cosl()
+3.3正切值
+tan()/tanf()/tanl()
+3.4双曲线正弦值
+sinh()/sinhf()/sinhl()
+3.5双曲线余弦值
+cosh()/coshf()/coshl()
+3.4双曲线正切值
+tanh()/tanhf()/tanhl()
+4.反三角函数
+4.1反正弦值
+asin()/asinf()/asinl()
+4.2反余弦值
+acos()/acosf()/acosl()
+4.3反正切值
+atan()/atanf()/atanl()
+4.4反双曲线正弦值
+asinh()/asinhf()/asinhl()
+4.5反双曲线余弦值
+acosh()/acoshf()/acoshl()
+4.6反双曲线正切值
+atanh()/atanhf()/atanhl()
+```

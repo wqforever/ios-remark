@@ -936,3 +936,24 @@ if (result) {
 ```
 69、Charles：资源 史蒂芬周：http://www.sdifen.com/
 教程：https://www.jianshu.com/p/fdd7c681929c
+
+70、ijkplayer播放器设置参数：
+//开启硬件解码
+[options setPlayerOptionIntValue:1 forKey:@"videotoolbox"];
+// 设置音量大小，256为标准音量。（要设置成两倍音量时则输入512，依此类推）
+[options setPlayerOptionIntValue:512 forKey:@"vol"];
+// 最大fps
+[options setPlayerOptionIntValue:30 forKey:@"max-fps"];
+// 跳帧开关，如果cpu解码能力不足，可以设置成5，否则
+// 会引起音视频不同步，也可以通过设置它来跳帧达到倍速播放
+[options setPlayerOptionIntValue:0 forKey:@"framedrop"];
+// 指定最大宽度
+[options setPlayerOptionIntValue:960 forKey:@"videotoolbox-max-frame-width"];
+// 自动转屏开关
+[options setFormatOptionIntValue:0 forKey:@"auto_convert"];
+// 重连次数
+[options setFormatOptionIntValue:1 forKey:@"reconnect"];
+// 超时时间，timeout参数只对http设置有效，若果你用rtmp设置timeout，ijkplayer内部会忽略timeout参数。rtmp的timeout参数含义和http的不一样。
+[options setFormatOptionIntValue:30 * 1000 * 1000 forKey:@"timeout"];
+// 帧速率(fps)  （可以改，确认非标准桢率会导致音画不同步，所以只能设定为15或者29.97）
+[options setPlayerOptionIntValue:29.97 forKey:@"r"];

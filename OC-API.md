@@ -957,3 +957,5 @@ if (result) {
 [options setFormatOptionIntValue:30 * 1000 * 1000 forKey:@"timeout"];
 // 帧速率(fps)  （可以改，确认非标准桢率会导致音画不同步，所以只能设定为15或者29.97）
 [options setPlayerOptionIntValue:29.97 forKey:@"r"];
+
+71、lldb调试：http://ios.jobbole.com/83393/

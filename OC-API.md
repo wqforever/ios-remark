@@ -959,3 +959,4 @@ if (result) {
 [options setPlayerOptionIntValue:29.97 forKey:@"r"];
 
 71、lldb调试：http://ios.jobbole.com/83393/
+72、extern uint64_t dispatch_benchmark(size_t count, void (^block)(void)); 先申明才能用， 第一个参数是运行次数，返回是纳秒

@@ -961,3 +961,4 @@ if (result) {
 71、lldb调试：http://ios.jobbole.com/83393/
 72、extern uint64_t dispatch_benchmark(size_t count, void (^block)(void)); 先申明才能用， 第一个参数是运行次数，返回是纳秒
 73、injection3:https://mp.weixin.qq.com/s?__biz=MjM5NTQ2NzE0NQ==&mid=2247483999&idx=1&sn=bc88d37b6f819bd6bd7d8b76e9787620&chksm=a6f958b9918ed1af9a084ce2c2732aaee715193e37fdb830dc31d8f0174c0314b22dc5c0dd1e&mpshare=1&scene=1&srcid=0612tT8PS1pePiL5EmqMr9HH#rd
+74、取消键盘 [[UIApplicationsharedApplication] sendAction:@selector(resignFirstResponder)to:nil from:nil forEvent:nil];
